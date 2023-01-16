@@ -76,25 +76,6 @@ p {
 
 /* ********** Components ********** */
 
-/* ********** Utilities ********** */
-.container {
-  margin-left: auto;
-  margin-right: auto;
-  max-width: var(--max-width);
-}
-
-.none {
-  display: none;
-}
-
-@media screen and (min-width: 1024px) {
-  .container {
-    margin-left: auto;
-    margin-right: auto;
-    max-width: var(--max-width);
-  }
-}
-
 /* ********** Menu ********** */
 .menu-btn {
   border: 0;
@@ -235,6 +216,179 @@ p {
     height: 2.5rem;
     margin-left: 0.5rem;
     line-height: 2.5rem;
+  }
+}
+
+/* ********** CONTACT ********** */
+.contact {
+  margin-bottom: 1rem;
+}
+
+.contact__cont {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 1.5rem;
+}
+
+.contact__tittle {
+  font-size: 2rem;
+  background-image: linear-gradient(
+    45deg,
+    var(--gradient1),
+    var(--gradient2),
+    var(--gradient3)
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+}
+
+.contact__container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.contact__content {
+  width: 30rem;
+  border-radius: 1.25rem;
+  box-shadow: 0 0 20px 0 rgba(255, 255, 255, 0.2);
+  background-color: rgba(5, 5, 5, 0.5);
+}
+
+.contact__form {
+  display: grid;
+  grid-template-columns: 1fr;
+  margin: 1.5rem;
+}
+
+.form__p {
+  width: 100%;
+  margin: 1rem 0 1rem 0;
+}
+
+.form__label {
+  display: block;
+  width: 100%;
+  color: var(--first-color);
+}
+
+.form__input,
+.form__textarea {
+  width: 100%;
+  border: none;
+  background: none;
+  letter-spacing: 1px;
+  outline: 0;
+  resize: none;
+  border-bottom: 1px solid #fff;
+  color: #07d1b2;
+}
+
+.form-btn {
+  display: flex;
+  justify-content: center;
+}
+
+.form__button {
+  position: relative;
+  width: 5rem;
+  height: 2.5rem;
+  border: 0;
+  border-radius: 0.625rem;
+  background: linear-gradient(
+    115deg,
+    #4fcf70,
+    #fad648,
+    #a767e5,
+    #12bcfe,
+    #44ce7b
+  );
+}
+
+.form__button:hover {
+  animation: animate 0.4s linear infinite;
+  cursor: pointer;
+}
+
+@keyframes animate {
+  100% {
+    filter: hue-rotate(-360deg);
+  }
+}
+
+.form__span {
+  display: grid;
+  place-items: center;
+  position: absolute;
+  height: 82%;
+  width: 92%;
+  top: 50%;
+  left: 50%;
+  font-size: 1rem;
+  border-radius: 0.625rem;
+  transform: translate(-50%, -50%);
+  color: var(--first-color);
+  background-color: var(--background-btn);
+  font-family: "Fredoka One", cursive, "Raleway";
+}
+
+.form--none {
+  display: none;
+}
+
+.form__loader,
+.form__reponse {
+  text-align: center;
+  color: #fff;
+}
+
+/* ********** CONTACT MEDIA QUERYS ********** */
+@media screen and (min-width: 420px) {
+  .contact__cont {
+    justify-content: flex-start;
+    margin-left: 3rem;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .contact {
+    margin-bottom: 4rem;
+    margin-left: 74.5px;
+    margin-right: 74.5px;
+  }
+  .contact__cont {
+    margin-left: 74.5px;
+    margin-right: 74.5px;
+    justify-content: flex-start;
+  }
+  .contact__container {
+    margin-left: 74.5px;
+    margin-right: 74.5px;
+    max-width: var(--max-width);
+  }
+}
+
+/* ********** Utilities ********** */
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: var(--max-width);
+}
+
+.none {
+  display: none;
+}
+
+@media screen and (min-width: 1024px) {
+  .container {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: var(--max-width);
   }
 }
 
@@ -722,160 +876,6 @@ p {
   }
   .projects__span {
     width: 92%;
-  }
-}
-
-/* ********** CONTACT ********** */
-.contact {
-  margin-bottom: 1rem;
-}
-
-.contact__cont {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  margin-bottom: 1.5rem;
-}
-
-.contact__tittle {
-  font-size: 2rem;
-  background-image: linear-gradient(
-    45deg,
-    var(--gradient1),
-    var(--gradient2),
-    var(--gradient3)
-  );
-  background-clip: text;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  -moz-text-fill-color: transparent;
-}
-
-.contact__container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-}
-
-.contact__content {
-  width: 30rem;
-  border-radius: 1.25rem;
-  box-shadow: 0 0 20px 0 rgba(255, 255, 255, 0.2);
-  background-color: rgba(5, 5, 5, 0.5);
-}
-
-.contact__form {
-  display: grid;
-  grid-template-columns: 1fr;
-  margin: 1.5rem;
-}
-
-.form__p {
-  width: 100%;
-  margin: 1rem 0 1rem 0;
-}
-
-.form__label {
-  display: block;
-  width: 100%;
-  color: var(--first-color);
-}
-
-.form__input,
-.form__textarea {
-  width: 100%;
-  border: none;
-  background: none;
-  letter-spacing: 1px;
-  outline: 0;
-  resize: none;
-  border-bottom: 1px solid #fff;
-  color: #07d1b2;
-}
-
-.form-btn {
-  display: flex;
-  justify-content: center;
-}
-
-.form__button {
-  position: relative;
-  width: 5rem;
-  height: 2.5rem;
-  border: 0;
-  border-radius: 0.625rem;
-  background: linear-gradient(
-    115deg,
-    #4fcf70,
-    #fad648,
-    #a767e5,
-    #12bcfe,
-    #44ce7b
-  );
-}
-
-.form__button:hover {
-  animation: animate 0.4s linear infinite;
-  cursor: pointer;
-}
-
-@keyframes animate {
-  100% {
-    filter: hue-rotate(-360deg);
-  }
-}
-
-.form__span {
-  display: grid;
-  place-items: center;
-  position: absolute;
-  height: 82%;
-  width: 92%;
-  top: 50%;
-  left: 50%;
-  font-size: 1rem;
-  border-radius: 0.625rem;
-  transform: translate(-50%, -50%);
-  color: var(--first-color);
-  background-color: var(--background-btn);
-  font-family: "Fredoka One", cursive, "Raleway";
-}
-
-.form--none {
-  display: none;
-}
-
-.form__loader,
-.form__reponse {
-  text-align: center;
-  color: #fff;
-}
-
-/* ********** CONTACT MEDIA QUERYS ********** */
-@media screen and (min-width: 420px) {
-  .contact__cont {
-    justify-content: flex-start;
-    margin-left: 3rem;
-  }
-}
-
-@media screen and (min-width: 1024px) {
-  .contact {
-    margin-bottom: 4rem;
-    margin-left: 74.5px;
-    margin-right: 74.5px;
-  }
-  .contact__cont {
-    margin-left: 74.5px;
-    margin-right: 74.5px;
-    justify-content: flex-start;
-  }
-  .contact__container {
-    margin-left: 74.5px;
-    margin-right: 74.5px;
-    max-width: var(--max-width);
   }
 }
 
