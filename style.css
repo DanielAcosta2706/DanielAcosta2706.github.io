@@ -717,8 +717,8 @@ p {
 }
 
 .projects__face {
-  width: 15rem;
-  height: 13rem;
+  width: 18rem;
+  height: 14rem;
   transition: 0.4s;
 }
 
@@ -732,6 +732,18 @@ p {
   cursor: pointer;
   border-radius: 0.5rem;
   background-color: #0b0e14;
+}
+
+.face__out1 {
+  background-image: url(assets/projects/proyecto1.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.face__out2 {
+  background-image: url(assets/projects/proyecto2.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .projects__card:hover .projects__face.face__out {
@@ -757,7 +769,8 @@ p {
 }
 
 .projects__h3 {
-  font-size: 1rem;
+  font-size: 1.2rem;
+  color: rgba(255, 255, 255, 0.1);
 }
 
 .face__in {
@@ -778,12 +791,13 @@ p {
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
-  height: 12.5rem;
+  height: 12rem;
 }
 
 .projects__text {
-  font-size: 0.8rem;
-  padding: 0.5rem;
+  margin-top: 2rem;
+  font-size: 1rem;
+  padding: 1rem;
   color: rgba(255, 255, 255, 0.6);
 }
 
@@ -793,7 +807,7 @@ p {
   justify-content: center;
   align-self: center;
   position: relative;
-  width: 6rem;
+  width: 8rem;
   height: 2rem;
   border-radius: 0.6rem;
   background: linear-gradient(
@@ -821,7 +835,7 @@ p {
   justify-content: center;
   align-items: center;
   position: absolute;
-  width: 90%;
+  width: 92%;
   height: 80%;
   top: 50%;
   left: 50%;
@@ -846,7 +860,7 @@ p {
   }
 }
 
-@media screen and (min-width: 920px) {
+@media screen and (min-width: 980px) {
   .projects {
     margin-left: 74.5px;
     margin-right: 74.5px;
@@ -864,18 +878,6 @@ p {
 @media screen and (min-width: 1024px) {
   .projects {
     margin-bottom: 4rem;
-  }
-  .projects__face {
-    width: 18rem;
-    height: 14rem;
-  }
-  .projects__link {
-    margin-top: 0.3rem;
-    width: 7rem;
-    height: 3rem;
-  }
-  .projects__span {
-    width: 92%;
   }
 }
 
