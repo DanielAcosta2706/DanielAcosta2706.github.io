@@ -735,13 +735,13 @@ p {
 }
 
 .face__out1 {
-  background-image: url(assets/projects/proyecto1.jpg);
+  background-image: url(assets/projects/proyecto1.png);
   background-repeat: no-repeat;
   background-size: cover;
 }
 
 .face__out2 {
-  background-image: url(assets/projects/proyecto2.jpg);
+  background-image: url(assets/projects/proyecto2.png);
   background-repeat: no-repeat;
   background-size: cover;
 }
